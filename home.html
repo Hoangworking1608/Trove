@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="background-color: #F6E0DB;">
+
+<!-- Header -->
+  <header style="position: fixed; background-color: #F6E0DB;" class="w-full z-20">
+    <div class="flex px-[80px] pt-[24px] pb-[16px] align-items-center w-full">
+        <div class="justify-between flex-1 align-items-center">
+          <img src="img/Logo.png" alt="" class="size-64px">
+        </div>
+        <div class="flex gap-2.5">
+          <a class="tab flex" style="background-color:#FBD1B2;">Home</a>
+          <a href="/mining.html" class="tab flex">Mining</a>
+          <a class="tab flex">Loans</a>
+          <a class="tab flex">Sell</a>
+          <a class="tab flex">Referral</a>
+        </div>
+        <div class="flex-1 flex justify-end">
+          <button class="button">Connect Wallet</button>
+        </div>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+  <div id="header"  class="pb-[80px] pt-[140px] flex justify-center relative">
+    <div class="hero-text w-[800px]">
+      Craft the financial future with crypto trading, mining, and staking
+    </div>
+    <img class="absolute left-[140px] top-[240px]" src="img/Mining.svg" alt="">
+    <img class="absolute right-[244px] top-[160px]" src="img/Spaceship.svg" alt="">
+    <img class="absolute left-[183px] bottom-[56px]" src="img/Chart.svg" alt="">
+    <img class="absolute right-[136px] bottom-[147px]" src="img/Mining\\.svg" alt="">
+  </div>
+
+<!-- Statistic -->
+  <div class="py-[120px] flex relative justify-center gap-[48px]">
+    <!-- Polygon Item -->
+    <div class="w-[530px] h-[490px] relative" style="transform: rotate(8.4deg);">
+      <div class="pt-[220px] z-10 flex flex-col items-center justify-center gap-3">
+        <h1 class="title-1 z-10">
+          TROVE <br> Whitepaper
+        </h1>
+        <button class="z-10">
+          <img class="align-items-center justify-center" src="img/Icon - Play.svg" alt="">
+        </button>
+      </div>
+      <img class="absolute left-[0px] top-[0px]" src="img/Polygon.svg" alt="">
+    </div>
+    <!-- Rectangle Item -->
+    <div class="relative w-fit h-fit p-[24px]" style="transform: rotate(-6.5deg);">
+      <div class="flex flex-col gap-4 w-[500px] h-[480px] z-10 relative">
+        <div class="flex items-center justify-between w-full">
+          <p class="desc-1">
+            Crytocurrency Name
+          </p>
+          <div class="flex gap-2 items-center justify-center px-3 py-2" style="border: 2px solid #000; border-radius: 100px; background-color: #FFF">
+            <p class="desc-1"> 
+              TROVE
+            </p>
+            <img class="w-[32px] h-[32px]" src="img/Logo.png" alt="">
+          </div>
+        </div>
+        <div class="flex items-center justify-between w-full">
+          <p class="desc-1">
+            Total Address
+          </p>
+          <div class="flex gap-2 items-center justify-center">
+            <p class="desc-1"> 
+              TROVE
+            </p>
+            <button>
+              <img class="w-[32px] h-[32px]" src="img/content_copy.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between w-full">
+          <p class="desc-1">
+            Total Supply
+          </p>
+          <div class="flex gap-2 items-center justify-center">
+            <p class="desc-1"> 
+              24,000,000.00
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between w-full">
+          <p class="desc-1">
+            Network
+          </p>
+          <div class="flex gap-2 items-center justify-center">
+            <p class="desc-1"> 
+              BEP-20, BRC-20,...
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between w-full">
+          <p class="desc-1">
+            Start On
+          </p>
+          <div class="flex gap-2 items-center justify-center">
+            <p class="desc-1"> 
+              January 01, 2024
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between w-full">
+          <p class="desc-1">
+            Curculating Supply
+          </p>
+          <div class="flex gap-2 items-center justify-center">
+            <p class="desc-1"> 
+              2,800,000.00
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between w-full">
+          <p class="desc-1">
+            Available Supply
+          </p>
+          <div class="flex gap-2 items-center justify-center">
+            <p class="desc-1"> 
+              2,800,000.00
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-between w-full">
+          <p class="desc-1">
+            Total TROVE Staked
+          </p>
+          <div class="flex flex-col gap-2">
+            <p class="desc-1">
+              983,472,203.00 TROVE
+            </p>
+            <p class="desc-2 text-right">
+              ~$ 98,347.2
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-between w-full">
+          <p class="desc-1">
+            TVL
+          </p>
+          <div class="flex flex-col gap-2">
+            <p class="desc-1">
+              403.31 TROVE
+            </p>
+            <p class="desc-2 text-right">
+              ~$ 102,372.97
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="absolute w-full left-0 bottom-[0px]" src="img/Letter Rectangle.svg" alt="">
+    </div>
+  </div>
+
+<!-- Stages -->
+  <div class="w-full flex items-center justify-center py-[120px]">
+    <div class="flex flex-col gap-[48px] w-[1200px] justify-center items-center relative">
+      <h1 class="title-1 flex flex-start z-10 w-full px-[42px]">
+        TROVE's Stages
+      </h1>
+      <div class="flex items-center gap-4 justify-center w-full z-10">
+        <div class="table">
+          <img src="img/Plannet.svg" alt="">
+          <h2 class="title-2">
+            1. Discover Your Potential
+          </h2>
+          <p class="desc-2 line-clamp-5">
+            Explore the world of crypto trading, mining, and staking. Learn the basics, understand market dynamics, and uncover opportunities to leverage Web 3 technologies for financial growth.
+          </p>
+        </div>
+        <div class="table">
+          <img src="img/Setting Box.svg" alt="">
+          <h2 class="title-2">
+            2. Master the Tools
+          </h2>
+          <p class="desc-2 line-clamp-5">
+            Dive deeper into the strategies and tools of the trade. From analyzing charts to optimizing mining rigs, discover the techniques to enhance your trading skills, maximize your mining efficiency, and stake with confidence in the decentralized ecosystem.      </p>
+        </div>
+        <div class="table">
+          <img src="img/UFO.svg" alt="">
+          <h2 class="title-2">
+            3. Shape Your Future
+          </h2>
+          <p class="desc-2 line-clamp-5">
+            Empower yourself to shape the future of finance. With a TONid understanding of crypto markets and Web 3 protocols, seize opportunities, mitigate risks, and build a sustainable financial future that aligns with the decentralized ethos of the blockchain revolution.      </p>
+        </div>
+      </div>
+      <img class="absolute" src="img/File Background.svg" alt="">
+    </div>
+  </div>
+
+<!-- Contact -->
+  <div class="flex flex-col justify-center items-center py-[240px] gap-[32px] relative" style="transform: rotate(8.4deg);">
+    <h1 class="title-1 items-center justify-center z-10">
+      Receive Support <br> Notification
+    </h1>
+    <p class="desc-2 flex justify-center items-center z-10" style="text-align: center;">
+      Do you have questions about virtual currency issues? <br> Please enter your Email address below to receive support from Trove.
+    </p>
+    <input class="input outline-none background-color-none items-center justify-center z-10" type="text" placeholder="Enter Your Email">
+    <button class="button z-10">GET NOTIFICATION</button>
+    <img class="absolute" src="img/Star Ques.svg" alt="">
+  </div>
+
+<!-- New -->
+  <div class="flex gap-[36px] items-center justify-center py-[120px]">
+    <!-- Left Col -->
+    <div class="flex flex-col gap-[36px] pb-[120px]">
+      <div class="flex gap-[36px]">
+          <div class="news flex flex-col gap-[20px] px-[36px] py-[36px]">
+            <h1 class="title-1 text-left">
+              Decoding Crypto Market Trends
+            </h1>
+            <p class="desc-2">
+              This article delves into the dynamic nature of the cryptocurrency market. From the volatility of Bitcoin to the emergence of altcoins, readers will gain insights into the factors driving price fluctuations and market sentiment. Understanding these dynamics is crucial for investors seeking to navigate the crypto space with confidence.
+            </p>
+            <button class="button w-full">Learn More</button>
+          </div>
+      </div>
+      <div class="flex gap-[36px]">
+        <div class="news flex flex-col gap-[20px] px-[36px] py-[36px]">
+          <h1 class="title-1 text-left">
+            Crypto Trading: Risk vs. Reward
+          </h1>
+          <p class="desc-2">
+            In this piece, we explore the highs and lows of crypto trading. From the potential for massive gains to the inherent risks of market volatility, readers will learn how to approach trading with caution and strategy. Tips for risk management and maximizing rewards will be shared to help traders make informed decisions in this fast-paced environment.          </p>
+          <button class="button w-full">Learn More</button>
+        </div>
+    </div>
+    </div>
+    <!-- Right Col -->
+    <div class="flex flex-col gap-[36px] pt-[120px]">
+      <div class="flex gap-[36px]">
+          <div class="news flex flex-col gap-[20px] px-[36px] py-[36px]">
+            <h1 class="title-1 text-left">
+              Opportunities & Challenges
+            </h1>
+            <p class="desc-2">
+              This article sheds light on the growing popularity of decentralized finance (DeFi) within the crypto market. Readers will discover the various opportunities presented by DeFi protocols, such as yield farming and liquidity mining, as well as the associated risks, such as smart contract vulnerabilities and impermanent loss. Understanding the intricacies of DeFi is essential for investors looking to capitalize on this trend.
+            </p>
+            <button class="button w-full">Learn More</button>
+          </div>
+      </div>
+      <div class="flex gap-[36px]">
+        <div class="news flex flex-col gap-[20px] px-[36px] py-[36px]">
+          <h1 class="title-1 text-left">
+            Regulation Crypto: Friend or Foe?
+          </h1>
+          <p class="desc-2">
+            Finally, this piece examines the evolving regulatory landscape surrounding cryptocurrencies. From government crackdowns to efforts towards regulatory clarity, readers will gain insights into how regulations impact the crypto market. Understanding the role of regulation is crucial for investors and enthusiasts alike, as it can shape the future trajectory of the industry.
+          </p>
+          <button class="button w-full">Learn More</button>
+        </div>
+    </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+  <div class="flex flex-col gap-[48px] px-[120px] relative">
+    <div class="flex justify-between px-[120px] z-10">
+      <button class="desc-2">Terms of Use</button>
+      <button class="desc-2">Trove Contract</button>
+      <button class="desc-2">Trove Whitepaper</button>
+    </div>
+    <div class="flex gap-[16px] items-center justify-center z-10">
+      <p class="desc-2">TROVE © 2024</p>
+      <a href="#header">
+        <div class="flex">
+          <p class="desc-2" style="color: #5196FF;">
+            Back to top
+          </p>
+          <img src="img/north.svg" alt="">
+        </div>
+      </a>
+    </div>
+    <img class="z-10" src="img/Half Trove.svg" alt="">
+    <img class="absolute bottom-[0px] left-[0px] w-full" src="/img/Footer.svg" alt="">
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

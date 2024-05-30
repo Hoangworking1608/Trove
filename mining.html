@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="background-color: #F6E0DB;">
+
+<!-- Header -->
+  <header style="position: fixed; background-color: #F6E0DB;" class="w-full z-20">
+    <div class="flex px-[80px] pt-[24px] pb-[16px] align-items-center w-full">
+        <div class="justify-between flex-1 align-items-center">
+          <img src="img/Logo.png" alt="" class="size-64px">
+        </div>
+        <div class="flex gap-2.5">
+          <a href="/home.html" class="tab flex">Home</a>
+          <a style="background-color: #FBD1B2;" href="/mining.html" class="tab flex">Mining</a>
+          <button class="tab flex">Loans</button>
+          <button class="tab flex">Sell</button>
+          <button class="tab flex">Referral</button>
+        </div>
+        <div class="flex-1 flex justify-end">
+          <button class="button">Connect Wallet</button>
+        </div>
+    </div>
+  </header>
+
+<!-- Body -->
+ <div class="flex flex-col pt-[200px] flex items-center justify-center gap-[32px]">
+    <!-- Top -->
+    <div class="w-[960px] flex flex-col gap-[24px]">
+        <div class="flex flex-col gap-[8px]">
+            <h1 class="title-1 flex flex-start w-full">
+                The More Power, The More Trove Minted
+            </h1>
+            <p class="desc-2">
+                Input your TON from your wallet to TROVE
+            </p>
+        </div>
+        <div class="relative">
+            <input class="input outline-none bg-transparent items-center justify-center w-full" type="text" placeholder="0">
+            <div class="flex gap-[8px] items-center absolute top-[0px] right-[0px]">
+                <button style="background-color: #EF724F; border-radius: 8px; color: #FFFF;" class="desc-2 px-[16px] py-[2px]">Max</button>
+                <div class="w-[2px] h-[32px]" style="background-color: #5d5d5d;"></div>
+                <details class="relative gap-[16px]">
+                    <summary class="flex gap-[4px] items-center">
+                        <img class="w-[24px] h-[24px]" src="/img/Ton Logo.svg" alt="">
+                        <p class="desc-3">TON</p>
+                        <img src="/img/arrow_drop_down.svg" alt="">
+                    </summary>
+                    <div class="absolute top-[36px] p-4 w-[calc(100%+32px)] left-[-16px] flex flex-col gap-[16px]" style="border-radius: 8px; border: 2px solid #000; background-color: #ffffff; ">
+                        <div class="flex gap-[4px] items-center">
+                            <img class="w-[24px] h-[24px]" src="/img/Tether-USDT-icon.png" alt="">
+                            <p class="desc-3">USDT</p>
+                        </div>
+                        <div class="w-full h-[2px]" style="background-color: #000;"></div>
+                        <div class="flex gap-[4px] items-center">
+                            <img class="w-[24px] h-[24px]" src="/img/Ethereum-ETH-icon.png" alt="">
+                            <p class="desc-3">ETH</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="flex items-center gap-[6px]">
+            <p class="desc-2">
+                Balance
+            </p>
+            <p class="desc-2">
+                0.0001 TON
+            </p>
+        </div>
+        <div class="flex gap-[8px] items-center">
+            <input class="checkbox mb-[6px]" type="checkbox" name="" id="">
+            <div class="flex gap-[4px]">
+                <p class="desc-2">I agree to</p>
+                <button class="desc-2" style="text-decoration: underline;">TROVE's terms</button>
+                <p class="desc-2">of transactions</p>
+            </div>
+        </div>
+        <button class="button">Mining</button>
+    </div>
+    <img src="/img/arrow_cool_down.svg" alt="">
+    <!-- Bottom -->
+    <div class="w-[960px] px-[24px] py-[16px] flex flex-col gap-[12px]" style="background-color: #ACE2DF; border-radius: 16px; border: 3px solid #000;">
+        <div class="flex w-full justify-between items-center">
+            <p class="desc-2">
+                Your TON Power Up
+            </p>
+            <p class="title-2">
+                0 TON
+            </p>
+        </div>
+        <div class="flex w-full justify-between items-center">
+            <p class="desc-2">
+                Remaining time
+            </p>
+            <div id="countdown" class="title-2">
+                <span id="days">00</span> :
+                <span id="hours">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- Footer -->
+<div class="flex flex-col gap-[48px] px-[120px] relative pt-[120px]">
+    <div class="flex justify-between px-[120px] z-10">
+      <button class="desc-2">Terms of Use</button>
+      <button class="desc-2">Trove Contract</button>
+      <button class="desc-2">Trove Whitepaper</button>
+    </div>
+    <div class="flex gap-[16px] items-center justify-center z-10">
+      <p class="desc-2">TROVE © 2024</p>
+      <a href="#header">
+        <div class="flex">
+          <p class="desc-2" style="color: #5196FF;">
+            Back to top
+          </p>
+          <img src="img/north.svg" alt="">
+        </div>
+      </a>
+    </div>
+    <img class="z-10" src="img/Half Trove.svg" alt="">
+    <img class="absolute bottom-[0px] left-[0px] w-full" src="/img/Footer.svg" alt="">
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
