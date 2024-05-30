@@ -27,26 +27,26 @@
 <body style="background-color: #F6E0DB;">
 
 <!-- Header -->
-  <header style="position: fixed; background-color: #F6E0DB;" class="w-full z-20">
-    <div class="flex px-[80px] pt-[24px] pb-[16px] align-items-center w-full">
-        <div class="justify-between flex-1 align-items-center">
-          <img src="img/Logo.png" alt="" class="size-64px">
-        </div>
-        <div class="flex gap-2.5">
-          <a href="/home.html" class="tab flex">Home</a>
-          <a style="background-color: #FBD1B2;" href="/mining.html" class="tab flex">Mining</a>
-          <button class="tab flex">Loans</button>
-          <button class="tab flex">Sell</button>
-          <button class="tab flex">Referral</button>
-        </div>
-        <div class="flex-1 flex justify-end">
-          <button class="button">Connect Wallet</button>
-        </div>
-    </div>
-  </header>
+<header style="position: fixed; background-color: #F6E0DB;" class="w-full z-20">
+  <div class="flex px-[80px] pt-[24px] pb-[16px] align-items-center w-full">
+      <div class="justify-between flex-1 align-items-center">
+        <img src="img/Logo.png" alt="" class="size-64px">
+      </div>
+      <div class="flex gap-2.5">
+        <a href="/index.html" class="tab flex">Home</a>
+        <a style="background-color: #FBD1B2;" href="/mining.html" class="tab flex">Mining</a>
+        <a href="/boost.html" class="tab flex">Boost</a>
+        <a href="/swap.html" class="tab flex">Swap</a>
+        <a href="/referral.html" class="tab flex">Referral</a>
+      </div>
+      <div class="flex-1 flex justify-end">
+        <button class="button">Connect Wallet</button>
+      </div>
+  </div>
+</header>
 
 <!-- Body -->
- <div class="flex flex-col pt-[200px] flex items-center justify-center gap-[32px]">
+ <div id="header" class="flex flex-col pt-[200px] flex items-center justify-center gap-[32px]">
     <!-- Top -->
     <div class="w-[960px] flex flex-col gap-[24px]">
         <div class="flex flex-col gap-[8px]">
@@ -102,7 +102,7 @@
     </div>
     <img src="/img/arrow_cool_down.svg" alt="">
     <!-- Bottom -->
-    <div class="w-[960px] px-[24px] py-[16px] flex flex-col gap-[12px]" style="background-color: #ACE2DF; border-radius: 16px; border: 3px solid #000;">
+    <div class="w-[960px] px-[24px] py-[16px] flex flex-col gap-[20px]" style="background-color: #ACE2DF; border-radius: 16px; border: 3px solid #000;">
         <div class="flex w-full justify-between items-center">
             <p class="desc-2">
                 Your TON Power Up
@@ -116,12 +116,31 @@
                 Remaining time
             </p>
             <div id="countdown" class="title-2">
-                <span id="days">00</span> :
+                <span id="days">00</span> day
                 <span id="hours">00</span> :
                 <span id="minutes">00</span> :
                 <span id="seconds">00</span>
             </div>
         </div>
+        <div class="w-full rounded-full h-[18px] flex items-center" style="background-color: #FFFF; border: 2px solid #000;">
+          <div id="progress" class="duration-700 h-[18px] rounded-full" style="background-color: #5196FF; border: 2px solid #000;"></div>
+        </div>
+        <div class="flex justify-between">
+          <div>
+            <p class="desc-2">
+              TROVE Minted
+            </p>
+            <p class="title-2">
+              0 TROVE
+            </p>
+          </div>
+          <button class="button">
+            Claim
+          </button>
+        </div>
+        <p class="desc-2">
+          - Enhance the minting of TROVE using TON. <br> - Utilized TON are non-cancellable to ensure the intrinsic value of TROVE, even if not recognized.
+        </p>
     </div>
  </div>
 

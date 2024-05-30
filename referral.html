@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="background-color: #F6E0DB;">
+
+<!-- Header -->
+<header style="position: fixed; background-color: #F6E0DB;" class="w-full z-20">
+  <div class="flex px-[80px] pt-[24px] pb-[16px] align-items-center w-full">
+      <div class="justify-between flex-1 align-items-center">
+        <img src="img/Logo.png" alt="" class="size-64px">
+      </div>
+      <div class="flex gap-2.5">
+        <a href="/index.html" class="tab flex">Home</a>
+        <a href="/mining.html" class="tab flex">Mining</a>
+        <a href="/boost.html" class="tab flex">Boost</a>
+        <a href="/swap.html" class="tab flex">Swap</a>
+        <a style="background-color: #FBD1B2;" href="/referral.html" class="tab flex">Referral</a>
+      </div>
+      <div class="flex-1 flex justify-end">
+        <button class="button">Connect Wallet</button>
+      </div>
+  </div>
+</header>
+
+
+
+<!-- Footer -->
+<div class="flex flex-col gap-[48px] px-[120px] relative pt-[120px]">
+    <div class="flex justify-between px-[120px] z-10">
+      <button class="desc-2">Terms of Use</button>
+      <button class="desc-2">Trove Contract</button>
+      <button class="desc-2">Trove Whitepaper</button>
+    </div>
+    <div class="flex gap-[16px] items-center justify-center z-10">
+      <p class="desc-2">TROVE © 2024</p>
+      <a href="#header">
+        <div class="flex">
+          <p class="desc-2" style="color: #5196FF;">
+            Back to top
+          </p>
+          <img src="img/north.svg" alt="">
+        </div>
+      </a>
+    </div>
+    <img class="z-10" src="img/Half Trove.svg" alt="">
+    <img class="absolute bottom-[0px] left-[0px] w-full" src="/img/Footer.svg" alt="">
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

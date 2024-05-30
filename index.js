@@ -21,7 +21,7 @@ document.querySelectorAll(".button").forEach((value)=>{
 // Countdown
 document.addEventListener("DOMContentLoaded", function() {
     // Set end time
-    const targetDate = new Date("2024-12-31T23:59:59").getTime();
+    const targetDate = new Date("2024-05-31T23:59:59").getTime();
 
     // Update countdown every second
     const interval = setInterval(() => {
@@ -43,5 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
         document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
         document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+        console.log(document.getElementById('countdown'));
+        document.getElementById('progress').style.width = `${seconds/60*100}%`
     }, 1000);
 });
