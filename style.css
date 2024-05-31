@@ -140,6 +140,27 @@ html{
     background-color: none;
 }
 
+.tab-time{
+    cursor: pointer;
+    border: 2px solid #939393; 
+    border-radius: 12px;
+}
+
+.tab-time .desc-2, .tab-time .desc-1{
+    color: #939393;
+}
+
+.tab-time.active{
+    border-radius: 12px;
+    border: 2px solid #000;
+    background: var(--Orange, #FBD1B2);
+
+}
+
+.tab-time.active .desc-2, .tab-time.active .desc-1 {
+    color:#000;
+}
+
 /* Typography */
 
 .hero-text{
