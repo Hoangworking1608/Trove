@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "name": "my-static-site",
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
