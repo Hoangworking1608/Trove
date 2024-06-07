@@ -79,3 +79,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// dropdown
+document.querySelectorAll(".minimaze").forEach((value,index)=>{
+    value.addEventListener("click", function(){
+    var checkclose = document.getElementsByClassName("withdraw")[index].classList.contains("close")
+    document.getElementsByClassName("withdraw")[index].classList.toggle("close") 
+    if (!checkclose) {
+        document.querySelectorAll(".minimaze img")[index].style = "transform: rotate(180deg)"
+        document.querySelectorAll(".minimaze p")[index].innerText= "Explane"
+    } else {
+        document.querySelectorAll(".minimaze img")[index].style = "transform: rotate(0deg)"
+        document.querySelectorAll(".minimaze p")[index].innerText= "Collapse"
+    }
+
+})
+})

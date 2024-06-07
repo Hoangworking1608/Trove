@@ -227,3 +227,10 @@ html{
     line-height: 100%; /* 36px */
     text-transform: capitalize;  
 }
+
+.withdraw.close{
+    height: 0px;
+    display: none;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
