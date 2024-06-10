@@ -68,12 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let item of items) {
         item.addEventListener("click", function() {
-            // Loại bỏ lớp 'bg-blue-500' và 'text-white' khỏi tất cả các item
             for (let i of items) {
                 i.classList.remove("bg-blue-500", "text-white");
                 i.classList.add("bg-gray-200", "text-black");
             }
-            // Thêm lớp 'bg-blue-500' và 'text-white' vào item được chọn
             this.classList.remove("bg-gray-200", "text-black");
             this.classList.add("bg-blue-500", "text-white");
         });
@@ -92,6 +90,5 @@ document.querySelectorAll(".minimaze").forEach((value,index)=>{
         document.querySelectorAll(".minimaze img")[index].style = "transform: rotate(0deg)"
         document.querySelectorAll(".minimaze p")[index].innerText= "Collapse"
     }
-
 })
 })
