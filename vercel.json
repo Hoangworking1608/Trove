@@ -1,11 +1,11 @@
-{
-    "version": 2,
-    "name": "my-static-site",
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ]
-  }
-  
+{ 
+  "version": 2, 
+  "public": true, 
+  "rewrites": [ 
+    { "source": "/", "destination": "/index.html" }, 
+    { "source": "/boost", "destination": "/boost.html" }, 
+    { "source": "/mining", "destination": "/mining.html" }, 
+    { "source": "/referral", "destination": "/referral.html" }, 
+    { "source": "/swap", "destination": "/swap.html" } 
+  ] 
+}
